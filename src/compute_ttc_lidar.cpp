@@ -2,7 +2,6 @@
 #include <numeric>
 #include <opencv2/core.hpp>
 
-
 #include "dataStructures.h"
 #include "structIO.hpp"
 
@@ -33,11 +32,9 @@ void computeTTCLidar(std::vector<LidarPoint> &lidarPointsPrev,
 
 int main()
 {
-
     std::vector<LidarPoint> currLidarPts, prevLidarPts;
     readLidarPts("../dat/C22A5_currLidarPts.dat", currLidarPts);
     readLidarPts("../dat/C22A5_prevLidarPts.dat", prevLidarPts);
-
 
     double ttc;
     computeTTCLidar(prevLidarPts, currLidarPts, ttc);

@@ -12,7 +12,7 @@ void computeTTCLidar(std::vector<LidarPoint> &lidarPointsPrev,
 {
     // auxiliary variables
     double dT = 0.1;        // time between two measurements in seconds
-    double laneWidth = 4.0; // assumed width of the ego lane
+    double laneWidth = 4.0; // assumed width of the ego lane (meters)
 
     // find closest distance to Lidar points within ego lane
     double minXPrev = 1e9, minXCurr = 1e9;
